@@ -5,13 +5,12 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.example.imccalculator.model.bmi.BMI
 import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface BMIDao {
 
-    @Insert(onConflict = OnConflictStrategy.Companion.REPLACE)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(entity: BMIEntity)
 
 

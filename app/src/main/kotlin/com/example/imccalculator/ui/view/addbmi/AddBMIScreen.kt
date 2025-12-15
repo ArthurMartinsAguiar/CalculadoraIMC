@@ -196,7 +196,8 @@ fun AddBMIContent(
                 onValueChange = { onEvent(AddBMIEvent.OnAgeChange(it)) },
                 label = { Text("Idade (anos)") },
                 placeholder = { Text("Ex: 25") },
-                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.NumberPassword)
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.NumberPassword),
+                isError = age.isBlank() && age.toIntOrNull() == null
             )
 
             Spacer(modifier = Modifier.height(16.dp))
