@@ -109,12 +109,13 @@ O projeto segue boas práticas recomendadas para aplicações Android modernas.
 * `domain` → Regras de negócio (cálculo de IMC, TMB, peso ideal, etc.)
 * `data` → Persistência de dados (Room)
 * `model` → Modelos de dados
+* `navigation` -> Navegação entre telas
 
 ---
 
 ### 🧮 Lógica de Cálculo
 
-* O cálculo do IMC e demais indicadores é centralizado em **classes de domínio**, evitando lógica diretamente nas telas.
+* O cálculo do IMC e demais indicadores é centralizado em uma **classe de domínio**, evitando lógica diretamente nas telas.
 * Isso garante reutilização, clareza e facilidade de testes.
 
 ---
@@ -130,7 +131,7 @@ O projeto segue boas práticas recomendadas para aplicações Android modernas.
 ### 🎨 Interface e UX
 
 * Interface desenvolvida com **Jetpack Compose**
-* Tema escuro como padrão
+* Tema claro/escuro variável conforme o sistema
 * Componentes com boa hierarquia visual
 * Destaque visual para resultados importantes (IMC e classificação)
 
@@ -151,7 +152,6 @@ O projeto segue boas práticas recomendadas para aplicações Android modernas.
 
 * Gráficos de evolução do IMC
 * Exportação de dados
-* Suporte a múltiplos usuários
 * Integração com APIs de saúde
 * Recomendações personalizadas
 
@@ -159,8 +159,8 @@ O projeto segue boas práticas recomendadas para aplicações Android modernas.
 
 ## 📄 Licença
 
-Projeto desenvolvido para fins educacionais e de portfólio.
+Projeto desenvolvido para fins educacionais.
 
 ---
 
-✍️ **Autor:** Arthur Martins
+✍️ **Autor:** Arthur Martins Aguiar e Eduardo Lordão Oliveira
